@@ -141,70 +141,71 @@ body {
   }
   /* Question Box */
 .question-box {
-    position: relative;
-    z-index: 1;
-    margin: 2rem auto;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 2rem 1rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    max-width: 90%;
-  }
-  
-  .sparkle-hover {
-    font-size: 1.8rem;
-    color: #fff;
-    position: relative;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-  
-  .sparkle-hover:hover::after {
-    content: "✨";
-    position: absolute;
-    right: -25px;
-    animation: sparkle 1s infinite;
-  }
-  
-  @keyframes sparkle {
-    0%   { opacity: 1; transform: scale(1) rotate(0deg); }
-    50%  { opacity: 0.5; transform: scale(1.3) rotate(180deg); }
-    100% { opacity: 1; transform: scale(1) rotate(360deg); }
-  }
-  
-  .btn-group {
-    margin-top: 1.2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.3s;
-    color: white;
-  }
-  
-  .btn.yes {
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
-  }
-  
-  .btn.no {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid white;
-    color: #ffeef7;
-  }
-  
-  .btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  }
+  position: relative;
+  z-index: 1;
+  margin: 6rem auto 2rem auto;  /* ⬅️ Top spacing lowered */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem 1rem;         /* ⬅️ Slightly smaller padding */
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  max-width: 90%;
+}
+
+.sparkle-hover {
+  font-size: 1.6rem;            /* ⬅️ Slightly smaller text */
+  color: #fff;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.sparkle-hover:hover::after {
+  content: "✨";
+  position: absolute;
+  right: -25px;
+  animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+  0%   { opacity: 1; transform: scale(1) rotate(0deg); }
+  50%  { opacity: 0.5; transform: scale(1.3) rotate(180deg); }
+  100% { opacity: 1; transform: scale(1) rotate(360deg); }
+}
+
+.btn-group {
+  margin-top: 1rem;             /* ⬅️ Reduced vertical spacing */
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;                  /* ⬅️ Slightly closer buttons */
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 18px;            /* ⬅️ Smaller button size */
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  color: white;
+}
+
+.btn.yes {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
+}
+
+.btn.no {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: #ffeef7;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
   

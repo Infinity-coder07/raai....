@@ -2,22 +2,24 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   background: linear-gradient(135deg, #ff7eb3, #ff758c);
   font-family: 'Comic Sans MS', cursive, sans-serif;
   color: white;
   text-align: center;
-  min-height: 100vh;
-  overflow-x: hidden;  /* Only hide horizontal scroll */
+  overflow-x: hidden; /* Allow vertical scroll only */
 }
+
 
   /* Hearts background */
   .heart-bg {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 0;
-  }
+    pointer-events: none;
+}
   
   .heart {
     position: absolute;

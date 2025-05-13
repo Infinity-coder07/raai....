@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Crush 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <audio id="bg-music" autoplay loop>
+        <source src="your-music.mp3" type="audio/mpeg">
+        
+   </audio>
+   <p style="text-align:center; color:white; font-size:0.9rem; margin-top:10px;">🎶 Tap anywhere to feel the vibe 💖</p>
+
+  <div class="heart-bg">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="profile">
+    <img src="profile.jpg" alt="Her Cute Face 😍" class="profile-pic" />
+    <div class="profile-info">
+      <h2>✨ Raai...✨</h2>
+      <p>My heart's CEO 💼❤️</p>
+    </div>
+  </div>
+
+  <!-- Some extra text -->
+  <div class="content">
+    <h1>Hey Darling...💕</h1>
+    <p>This is just for you 🌸</p>
+  </div>
+  <!-- Topic Section -->
+<div class="topic">
+    <h2>💌 A Little Something I Wanna Say...</h2>
+    <p>
+      <!-- You can change this text whenever you want -->
+      Sometimes words aren’t
+       enough to tell you how special you are,
+        but I wanted to try anyway.
+         You're not just beautiful — you're the reason 
+         my heart learned to dance again. 🌟
+    </p>
+  </div>
+
+<!-- Love Question Section -->
+<div class="question-box">
+    <h2 class="sparkle-hover">💭 Can I be Yours...?</h2>
+    <div class="btn-group">
+      <a href="https://wa.me/qr/HL4VDS477RJIO1?text=Yes%20you%20can%20be%20mine%20💖" target="_blank" class="btn yes">Yes 💞</a>
+      <a href="https://wa.me/qr/HL4VDS477RJIO1?text=Sorry%20I%20don%27t%20feel%20the%20same%20😔" target="_blank" class="btn no">No 💔</a>
+    </div>
+  </div>
+  
+
+  <script>
+    // Unlock music on first user interaction (touch/click)
+    document.addEventListener('click', function () {
+      const audio = document.getElementById('bg-music');
+      if (audio.paused) {
+        audio.play().catch(e => console.log("Autoplay blocked:", e));
+      }
+    }, { once: true });
+  </script>
+  
+</body>
+</html>

@@ -1,14 +1,15 @@
 /* Insta-love background */
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: white;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;  /* Only hide horizontal scroll */
+}
+
   /* Hearts background */
   .heart-bg {
     position: absolute;
@@ -141,71 +142,78 @@ body {
   }
   /* Question Box */
 .question-box {
-  position: relative;
-  z-index: 1;
-  margin: 0.5rem auto;  /* ⬅️ Top spacing lowered */
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 1.5rem 1rem;         /* ⬅️ Slightly smaller padding */
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  max-width: 90%;
-}
-
-.sparkle-hover {
-  font-size: 1.6rem;            /* ⬅️ Slightly smaller text */
-  color: #fff;
-  position: relative;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.sparkle-hover:hover::after {
-  content: "✨";
-  position: absolute;
-  right: -25px;
-  animation: sparkle 1s infinite;
-}
-
-@keyframes sparkle {
-  0%   { opacity: 1; transform: scale(1) rotate(0deg); }
-  50%  { opacity: 0.5; transform: scale(1.3) rotate(180deg); }
-  100% { opacity: 1; transform: scale(1) rotate(360deg); }
-}
-
-.btn-group {
-  margin-top: 1rem;             /* ⬅️ Reduced vertical spacing */
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;                  /* ⬅️ Slightly closer buttons */
-  flex-wrap: wrap;
-}
-
-.btn {
-  text-decoration: none;
-  padding: 8px 18px;            /* ⬅️ Smaller button size */
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 0.95rem;
-  transition: 0.3s;
-  color: white;
-}
-
-.btn.yes {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c);
-  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
-}
-
-.btn.no {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid white;
-  color: #ffeef7;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
+    position: relative;
+    z-index: 1;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    max-width: 90%;
+  }
+  
+  .sparkle-hover {
+    font-size: 1.8rem;
+    color: #fff;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .sparkle-hover:hover::after {
+    content: "✨";
+    position: absolute;
+    right: -25px;
+    animation: sparkle 1s infinite;
+  }
+  
+  @keyframes sparkle {
+    0%   { opacity: 1; transform: scale(1) rotate(0deg); }
+    50%  { opacity: 0.5; transform: scale(1.3) rotate(180deg); }
+    100% { opacity: 1; transform: scale(1) rotate(360deg); }
+  }
+  
+  .btn-group {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .btn.yes {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
+  }
+  
+  .btn.no {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: #ffeef7;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  .love-text {
+    font-size: 1rem;
+    color: #ffeef7;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  }
   
